@@ -8,3 +8,6 @@ class Player():
     
     def get_score(self):
         return self.score
+    def drop_cards(self):
+        self.cards=[]
+        self.score=0

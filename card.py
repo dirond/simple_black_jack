@@ -9,8 +9,12 @@ class Card():
   else:
       self.score=10
  def __str__(self):
-   return '[{0} {1}]'.format(
-   self.name.title(),self.suite)
+   s=''
+   if self.name!='10':
+       s=' '
+   return '+----+\n|{0}{2}  |\n|\
+    |\n|  {1}|\n+----+'.format(
+   self.name.title(),self.suite,s)
 if __name__=='__main__':
-    test_card=Card('♥','jack',10)
+    test_card=Card('♥','7')
     print(test_card)
